@@ -1,0 +1,66 @@
+html,
+body {
+    padding: 0;
+    border: 1px solid black;
+}
+
+fieldset {
+    background-color: beige;
+    border: 1px solid black;
+    padding: 10px;
+    width: 500px;
+    margin-top: 10px;
+}
+
+fieldset legend {
+    border: 1px solid black;
+    background-color: gainsboro;
+    color: black;
+    font-size: 25px;
+    padding: 5px;
+    text-align: center;
+}
+
+
+/*main DIV*/
+
+.m {
+    width: 500px;
+    padding: 20px;
+    height: auto;
+}
+
+
+/*left DIV*/
+
+.l {
+    width: 150px;
+    padding: 0px;
+    margin: 0px;
+    float: left;
+    text-align: left;
+}
+
+
+/*right DIV*/
+
+.r {
+    width: 350px;
+    margin: 0px;
+    padding: 0px;
+    float: right;
+    text-align: left;
+}
+
+.a {
+    clear: both;
+    width: 600px;
+    padding: 10px;
+}
+.f {
+    display: inline;
+    background-color: grey;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}

@@ -1,0 +1,25 @@
+/*main table*/
+
+.m {
+    border-radius: 5px;
+}
+
+table {
+    border: 1px solid black;
+}
+
+span {
+    font-family: verdana;
+    color: blue;
+    text-decoration: underline;
+}
+
+img {
+    height: 80px;
+    width: 100px;
+}
+
+.prise {
+    height: 393px;
+    border: 1px solid white;
+}
