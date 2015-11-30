@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta author="Marina Shehova">
+    <!--<meta author="Marina Shehova">
     <!--    <meta description="">-->
     <!-- Latest compiled and minified CSS -->
     <!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">-->
@@ -14,24 +14,51 @@
 
     <!-- Latest compiled and minified JavaScript -->
     <!--    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>-->
-    <title>Game-Forms</title>
-    <link rel="stylesheet" href="Template.css">
+    <title>Game round 1</title>
+    <link rel="stylesheet" href="game.css">
     <!--    <script src="script.js"></script>-->
 </head>
 
 <body>
-    <h1>Game for the first challenge</h1>
-    <form name="game" action="msmarina90@gmail.com" method="post"></form>
-    First Name:
-    <input type="text" name="fname" > Last Name:
-    <input type="text" name="lname" >
-    <br> Email:
-    <input type="email" name="email">
-    <br> Message:
-    <textarea rows="5" cols="15"></textarea>
-    <br>
 
-    <input type="submit" name="submit" value="submit">
+    <h1>Game round 1</h1>
+
+    <form action="http://zenifytheweb.com/api/game/start" method="post" target="_blank">
+        <div class="table">
+            <div class="row">
+                <div class="cell1">
+                    First Name:
+                </div>
+                <div class="cell2">
+                    <input type="text" name="firstname" placeholder="your first name">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="cell1">
+                    Email:
+                </div>
+                <div class="cell2">
+                    <input type="email" name="usermail" placeholder="your email address">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="cell1">
+                    Message:
+                </div>
+                <div class="cell2">
+                    <textarea rows="5" cols="15">Game</textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="cell1>">
+                </div>
+                <div class="cell2">
+                    <input type="submit" value="send">
+                </div>
+            </div>
+        </div>
     </form>
 </body>
 

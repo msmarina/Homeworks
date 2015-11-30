@@ -1,0 +1,27 @@
+h1 {
+    padding-left: 100px;
+}
+.table {
+    display: table;
+    padding: 5px;
+    margin: 5px;
+    background-color: lightgreen;
+    background-blend-mode: color-burn;
+    width: 400px;
+    height: 100px;
+}
+
+.cell1 {
+    display: table-cell;
+    padding: 5px;
+    margin: 5px;
+    width: 120px;
+    
+    
+}
+
+.cell2 {
+    display: table-cell;
+    padding: 5px;
+    margin: 5px;
+}

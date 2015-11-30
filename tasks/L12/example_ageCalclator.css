@@ -1,0 +1,40 @@
+fieldset {
+    width: 300px;
+    margin-top: 50px;
+    margin-left: 100px;
+    background-color: darkslategrey;
+    color: white;
+}
+
+legend {
+    background-color: white;
+    color: black;
+    font-size: 30px;
+    padding: 5px;
+    margin: 5px;
+    margin-left: 25px;
+    margin-right: 25px;
+    border:1px solid grey;
+}
+
+.row {
+    display: table-row;
+}
+
+.cell1 {
+    display: table-cell;
+    font-size: 20px;
+    padding: 15px;
+    margin: 3px;
+}
+
+
+.calcButton {
+    background-color: lightgrey;
+    color: black;
+    font-size: 15px;
+    border-radius: 8px;
+    margin-top: 30px;
+    margin-left: 75px;
+}
+

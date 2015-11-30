@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Age calculator</title>
+    <link rel="stylesheet" href="example_ageCalclator.css">
+    <script src="example_ageCalclator.js"></script>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Simple age calculator</legend>
+        <div class="table">
+            <div class="row">
+                <div class="cell1">
+                    Day:
+                </div>
+                <div class="cell2">
+                    <input type="text" id="txtday" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="cell1">
+                    Month:
+                </div>
+                <div class="cell2">
+                    <input type="text" id="txtMonth" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="cell1">
+                    Year:
+                </div>
+                <div class="cell2">
+                    <input type="text" id="txtYear" onblur="CalcAge();" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="cell1">
+                    <input type="button" class="calcButton" value="Calculate Age" onclick="CalcAge();" />
+                </div>
+            </div>
+            </br>
+            <span id="Age"></span>
+        </div>
+    </fieldset>
+</body>
+
+</html>
