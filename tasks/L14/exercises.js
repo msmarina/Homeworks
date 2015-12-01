@@ -1,56 +1,49 @@
-/* 1. Напишете функция greeting, която приема параметър name и като резултат връща стринг, който поздравява.
-
-Например:
-
-greeting("Jeni"); // "Hello, Jeni!" */
-
-
+"use strict"
+//task 1 works
 function greeting(name) {
-    console.log("Hello, " + name + "!");
-};
+
+    return "Hello, " + name + "!";
+}
+
 greeting("Jeni");
-
-/*2.Напишете клас Person, който да задава собствено и фамилно име на конструираните обекти.
-
-Пример:
-
-new Person("Бойко", "Борисов"); // Person { firstName: "Бойко", lastName: "Борисов" } */
-
+//task 2 works
 function Person(fname, lname) {
-    this.firstname = fname;
-    this.lastname = lname;
-    this.fullname = fname + lname;
-};
-
-new Person("Бойко", "Борисов");
-
-
-/*3. Направете втора функция, която да поздравява, но я кръстете personGreeting и вместо име й подавайте обект от тип Person.
-
-Пример:
-
-personGreeting(new Person("Бойко", "Борисов")); // "Hello, Бойко Борисов!" */
- function personGreeting (fname, lanme) {
-       fullname = fname + lanme;
-        return "Hello, " + fullname + "!";
+    this.firstName = fname;
+    this.lastName = lname;
+    // 6 works
+    this.isPolite = true;
+    // 7 ????
+    this.bePolite = function () {
+        if (this.isPolite === true) {
+            return true;
+        } else if (this.isPolite === false)
+            return false;
     }
- personGreeting("Бойко", "Борисов");
+    this.fullName = fname + lname;
+    // 5 works
+    this.introduce = function () {
+       // 8 samo pyrvoto se poluchava s false ni6to ne stava
+        if (this.isPolite === true) {
+            return "Казвам се Бойко Борисов!";
+        } else if (this.isPolite == false) {
 
-/* 4. Направете така, че последната функция да приема още един параметър beFormal, който може да има стойност true или false. Ако е true, нека поздрава да е официялен (т.е. по двете имена на човека), а ако е false - да е само по първо име.
+            return "Аз съм Бойко!";
+        }
+        return "Здравейте, казвам се " + this.firstName + " " + this.lastName;
+    }
+    this.greet = function(other) {
+        
+    }
 
-Пример:
-
-var person = new Person("Бойко", "Борисов");
-personGreeting(person, true); // "Hello, Бойко Борисов!"
-personGreeting(person, false); // "Hi, Бойко!" */
+}
 
 
+// it is not working 4, 3
 
-/*5.Направете функция (метод) introduce в класа Person, която да връща стринг, който представя текущия обект (т.е. човека, който е инстанция на класа)
+var personGreeting = function Person() {
+    var beFormal = true;
 
-Пример:
+    return "Hello, " + greeting;
+}
 
-var person = new Person("Бойко", "Борисов");
-person.introduce(); // "Здравейте, казвам се Бойко Борисов!" */
-
-function introduce
+personGreeting(new Person("Бойко", "Борисов"));
