@@ -26,11 +26,11 @@ greeting("Jeni");
       var lili = new Person("Лили", "Иванова");
 	   boiko.introduce();
 	  lili.bePolite(false); 
+	  //lili ne greet-va boiko !
 	  lili.greet(boiko);
 	  lili.introduce();
-	// return "Zdravei, " + otherPerson + "kazvam se " + this.firstName;  
   }
-
+//personGreeting is not working
    this.personGreeting = function () {
 	return "Hello, " + this.fullName;
 }
