@@ -1,6 +1,7 @@
 "use strict"
 
 
+
 function myFunction() {
     var x = document.getElementById("fname");
     x.value = x.value.toUpperCase();
@@ -16,4 +17,3 @@ function myTimer() {
     var d = new Date();
     document.getElementById("demo").innerHTML = d.toLocaleTimeString();
 }
-
