@@ -5,7 +5,7 @@ h1 {
 
 h2 {
     color: darkgreen;
-    margin-left: 350px;
+    margin-left: 400px;
 }
 
 form {
@@ -19,16 +19,6 @@ label {
     display: inline-block;
     margin: 5px 0px 0px 5px;
     padding: 2px;
-}
-
-#submit,
-#fname,
-#email,
-#password,
-#passwordConfirmation,
-#photo {
-    padding: 5px;
-    margin: 5px;
 }
 
 span {
